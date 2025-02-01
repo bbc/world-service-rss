@@ -1,0 +1,43 @@
+name: Run index and save results
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/30 * * * *'
+  push:
+    branches:
+          - main
+          
+permissions:
+  contents: write
+
+jobs:
+  run-fetchdata:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run index script
+        run: node index.js
+
+      - name: Commit readme files
+        id: commit
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          if ! git diff --exit-code; then
+            git add .
+            git commit -m "Update feeds"
+            git push
+          fi
+        shell: bash
