@@ -56,7 +56,7 @@ let parser = new Parser({
 });
 
 Object.keys(feeds).forEach((service, i) => {
-    async () => {
+    (async () => {
           const url = feeds[service].url;
           console.log(`fetching ${url}`);
           let feed = await parser.parseURL(url);
