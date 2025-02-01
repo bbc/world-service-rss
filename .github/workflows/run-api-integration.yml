@@ -32,6 +32,7 @@ jobs:
         timeout-minutes: 2
 
       - name: Commit readme files
+        if: always()
         id: commit
         run: |
           git config --local user.email "action@github.com"
