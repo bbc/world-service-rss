@@ -77,7 +77,7 @@ return Object.keys(feeds).forEach(async (service, i) => {
           feed.items.forEach(item => {
             const dateOriginal = new Date(item.pubDate);
             const date = dateOriginal.toLocaleDateString(feeds[service].locale, options);
-            md_contents += `## [${item.title}](${item.link}?at_campaign=githubrss)\r![${item.title}](${item.mediathumbnail.$.url})\r\r${item.pubDate}\r\r${item.contentSnippet}\r\r\r`;
+            md_contents += `## [${item.title}](${item.link}?at_campaign=githubrss)\r![${item.title}](${item.mediathumbnail.$.url})\r\r_${item.pubDate}_\r\r${item.contentSnippet}\r\r\r`;
           });
           console.log(`writing ${service}`);
           return fs.writeFileSync(`./${service}.md`, md_contents);
