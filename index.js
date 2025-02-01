@@ -64,7 +64,7 @@ return Object.keys(feeds).forEach(async (service, i) => {
           let md_contents = `# ${feed.title}\r\r`;
 
           feed.items.forEach(item => {
-            md_contents += `## [${item.title}](${item.link})\r![${item.title}](${item.mediathumbnail.$.url})\r\r${item.contentSnippet}\r\r\r`;
+            md_contents += `## [${item.title}](${item.link}?at_campaign=githubrss)\r![${item.title}](${item.mediathumbnail.$.url})\r\r${item.contentSnippet}\r\r\r`;
           });
           console.log(`writing ${service}`);
           return fs.writeFileSync(`./${service}.md`, md_contents);
