@@ -56,8 +56,7 @@ let parser = new Parser({
 });
 
 Object.keys(feeds).forEach((service, i) => {
-    setTimeout( () => {
-        (async () => {
+    async () => {
           const url = feeds[service].url;
           console.log(`fetching ${url}`);
           let feed = await parser.parseURL(url);
@@ -67,10 +66,6 @@ Object.keys(feeds).forEach((service, i) => {
             md_contents += `## [${item.title}](${item.link})\r![${item.title}](${item.mediathumbnail.$.url})\r\r${item.contentSnippet}\r\r\r`;
           });
           console.log(`writing ${service}`);
-          fs.writeFileSync(`./${service}.md`, md_contents);
-          if (service === 'persian') {
-            return true; // hack
-          }
+          return fs.writeFileSync(`./${service}.md`, md_contents);
         })()
-    }, 500 * i)
 });
