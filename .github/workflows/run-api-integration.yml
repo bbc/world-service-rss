@@ -29,6 +29,7 @@ jobs:
 
       - name: Run index script
         run: node index.js
+        timeout-minutes: 2
 
       - name: Commit readme files
         id: commit

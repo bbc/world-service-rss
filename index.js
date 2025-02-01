@@ -57,16 +57,17 @@ let parser = new Parser({
 
 Object.keys(feeds).forEach((service, i) => {
     setTimeout( () => {
-    (async () => {
-      const url = feeds[service].url;
-      console.log(`fetching ${url}`);
-      let feed = await parser.parseURL(url);
-      let md_contents = `# ${feed.title}\r\r`;
+        (async () => {
+          const url = feeds[service].url;
+          console.log(`fetching ${url}`);
+          let feed = await parser.parseURL(url);
+          let md_contents = `# ${feed.title}\r\r`;
 
-      feed.items.forEach(item => {
-        md_contents += `## [${item.title}](${item.link})\r![${item.title}](${item.mediathumbnail.$.url})\r\r${item.contentSnippet}\r\r\r`;
-      });
-      fs.writeFileSync(`./${service}.md`, md_contents);
-
-    })()}, 500 * i)
+          feed.items.forEach(item => {
+            md_contents += `## [${item.title}](${item.link})\r![${item.title}](${item.mediathumbnail.$.url})\r\r${item.contentSnippet}\r\r\r`;
+          });
+          console.log(`writing ${service}`);
+          fs.writeFileSync(`./${service}.md`, md_contents);
+        })()
+    }, 500 * i)
 });
