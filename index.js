@@ -55,7 +55,7 @@ let parser = new Parser({
   }
 });
 
-Object.keys(feeds).forEach(async (service, i) => {
+return Object.keys(feeds).forEach(async (service, i) => {
     await setTimeout( () => {
         (async () => {
           const url = feeds[service].url;
