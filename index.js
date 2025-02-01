@@ -68,6 +68,9 @@ Object.keys(feeds).forEach((service, i) => {
           });
           console.log(`writing ${service}`);
           fs.writeFileSync(`./${service}.md`, md_contents);
+          if (service === 'persian') {
+            return true; // hack
+          }
         })()
     }, 500 * i)
 });
