@@ -66,6 +66,11 @@ Object.keys(feeds).forEach((service, i) => {
             md_contents += `## [${item.title}](${item.link})\r![${item.title}](${item.mediathumbnail.$.url})\r\r${item.contentSnippet}\r\r\r`;
           });
           console.log(`writing ${service}`);
-          return fs.writeFileSync(`./${service}.md`, md_contents);
+          try {
+            fs.writeFileSync(`./${service}.md`, md_contents);
+          }
+          catch (e) {
+            console.error('error', e);
+          }
         })()
 });
