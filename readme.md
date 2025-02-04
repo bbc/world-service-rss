@@ -29,7 +29,6 @@ A list of the most recent stories from across the world in your language
 - [portuguese](./portuguese.md)
 - [punjabi](./punjabi.md)
 - [russian](./russian.md)
-- [serbian cyr](./serbian-cyr.md)
 - [serbian lat](./serbian-lat.md)
 - [sinhala](./sinhala.md)
 - [somali](./somali.md)
@@ -44,6 +43,5 @@ A list of the most recent stories from across the world in your language
 - [uzbek](./uzbek.md)
 - [vietnamese](./vietnamese.md)
 - [yoruba](./yoruba.md)
-- [zhongwen simp](./zhongwen-simp.md)
 - [zhongwen trad](./zhongwen-trad.md)
     
