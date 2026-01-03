@@ -1,4 +1,4 @@
-# BBC News Pashto## [پر وېنزویلا د امریکا پراخ برید](https://www.bbc.co.uk/pashto/live/cy4qgv2k4w8t?at_medium=RSS&at_campaign=rss?at_campaign=githubrss)![پر وېنزویلا د امریکا پراخ برید](https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/82c9/live/ef94f880-e8a9-11f0-a8dc-93c15fe68710.jpg)__د امریکا ولسمشر ډونلډ ټرمپ وایي، امریکایي ځواکونو پر وېنزویلا پراخ بریدونه کړي چې په ترڅ کې یې د هغه هېواد " ولسمشر نیکولاس مادورو او د هغه مېرمنه" نیولي او له هېواده وېستلي دي.
+# BBC News Pashto## [پر وېنزویلا د امریکا پراخ برید](https://www.bbc.co.uk/pashto/live/cy4qgv2k4w8t?at_medium=RSS&at_campaign=rss?at_campaign=githubrss)![پر وېنزویلا د امریکا پراخ برید](https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/530a/live/d6b795e0-e8ac-11f0-b67b-690eb873de1b.jpg)__د امریکا ولسمشر ډونلډ ټرمپ وایي، امریکایي ځواکونو پر وېنزویلا پراخ بریدونه کړي چې په ترڅ کې یې د هغه هېواد " ولسمشر نیکولاس مادورو او د هغه مېرمنه" نیولي او له هېواده وېستلي دي.
 
 نوموړي دا اعلان په خپلې ټولنیزې پاڼې (سوشیل ټروټ) خپور کړی دی.
 
